@@ -1,0 +1,12 @@
+name: Reusable Deploy
+
+on: 
+  workflow_call:
+
+jobs: 
+  workflow-test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Test hello world
+        run: echo "Running reusable workflow.."
